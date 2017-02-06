@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>day10</display-name>
+  <welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>showall</servlet-name>
+		<servlet-class>com.itcast.web.controller.ListBookServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>showall</servlet-name>
+		<url-pattern>/servlet/showall</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>buy</servlet-name>
+		<servlet-class>com.itcast.web.controller.BuyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>buy</servlet-name>
+		<url-pattern>/servlet/buy</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>cart</servlet-name>
+		<servlet-class>com.itcast.web.UI.ListCartServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>cart</servlet-name>
+		<url-pattern>/servlet/cart</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>delete</servlet-name>
+		<servlet-class>com.itcast.web.controller.DeleteItemServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>delete</servlet-name>
+		<url-pattern>/servlet/deleteItem</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>clear</servlet-name>
+		<servlet-class>com.itcast.web.controller.ClearCartServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>clear</servlet-name>
+		<url-pattern>/servlet/clearAll</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>change</servlet-name>
+		<servlet-class>com.itcast.web.controller.changeItemQuantity</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>change</servlet-name>
+		<url-pattern>/servlet/changeItemQuantity</url-pattern>
+	</servlet-mapping>
+</web-app>
